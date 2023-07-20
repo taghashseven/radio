@@ -2,26 +2,39 @@ import React from "react";
 import music from './music'
 import CurrentMusic from "./CurrentMusic";
 
+
 const List = () => {
    
-    const OptionIcon = ({stroke , fill })=> {
+
+    const OptionIcon = ({stroke , fill})=>{
         return (
-            <svg viewBox="0 0 24 24"  className="w-6 h-6" stroke={stroke}>
-               <circle cx='10' r='10' cy='10' ></circle>
+            <svg  className="w-6 h-6 " fill={fill}  stroke={stroke} viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.15 28.012v-0.85c0.019-0.069 0.050-0.131 0.063-0.2 0.275-1.788 1.762-3.2 3.506-3.319 1.95-0.137 3.6 0.975 4.137 2.787 0.069 0.238 0.119 0.488 0.181 0.731v0.85c-0.019 0.056-0.050 0.106-0.056 0.169-0.269 1.65-1.456 2.906-3.081 3.262-0.125 0.025-0.25 0.063-0.375 0.094h-0.85c-0.056-0.019-0.113-0.050-0.169-0.056-1.625-0.262-2.862-1.419-3.237-3.025-0.037-0.156-0.081-0.3-0.119-0.444zM20.038 3.988l-0 0.85c-0.019 0.069-0.050 0.131-0.056 0.2-0.281 1.8-1.775 3.206-3.538 3.319-1.944 0.125-3.588-1-4.119-2.819-0.069-0.231-0.119-0.469-0.175-0.7v-0.85c0.019-0.056 0.050-0.106 0.063-0.162 0.3-1.625 1.244-2.688 2.819-3.194 0.206-0.069 0.425-0.106 0.637-0.162h0.85c0.056 0.019 0.113 0.050 0.169 0.056 1.631 0.269 2.863 1.419 3.238 3.025 0.038 0.15 0.075 0.294 0.113 0.437zM20.037 15.575v0.85c-0.019 0.069-0.050 0.131-0.063 0.2-0.281 1.794-1.831 3.238-3.581 3.313-1.969 0.087-3.637-1.1-4.106-2.931-0.050-0.194-0.094-0.387-0.137-0.581v-0.85c0.019-0.069 0.050-0.131 0.063-0.2 0.275-1.794 1.831-3.238 3.581-3.319 1.969-0.094 3.637 1.1 4.106 2.931 0.050 0.2 0.094 0.394 0.137 0.588z"></path>
             </svg>
         )
-            
-            
     }
 
-
+   
     const PlayIcon = ({stroke , fill})=>{
         return (
-            <svg viewBox="0 0 24 24 "  className="w-6 h-6 " stroke={stroke}>
-                <path d="M 2 2 V 20 L 20 10 Z   "></path>
+            <svg className="w-6 h-6 hidden " viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke={stroke}  fill={fill }>
+            <circle cx="12" cy="12" r="10" stroke={stroke} stroke-width="1.5"/>
+            <path d="M15.4137 10.941C16.1954 11.4026 16.1954 12.5974 15.4137 13.059L10.6935 15.8458C9.93371 16.2944 9 15.7105 9 14.7868L9 9.21316C9 8.28947 9.93371 7.70561 10.6935 8.15419L15.4137 10.941Z" stroke="#1C274C" stroke-width="1.5"/>
             </svg>
         )
     }
+
+    const PauseIcon = ({stroke , fill })=>{
+        return (
+            <svg className="w-6 h-6" fill={fill} stroke={stroke} viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="10" stroke={stroke} stroke-width="1.5"/>
+                <path d="M8 9.5C8 9.03406 8 8.80109 8.07612 8.61732C8.17761 8.37229 8.37229 8.17761 8.61732 8.07612C8.80109 8 9.03406 8 9.5 8C9.96594 8 10.1989 8 10.3827 8.07612C10.6277 8.17761 10.8224 8.37229 10.9239 8.61732C11 8.80109 11 9.03406 11 9.5V14.5C11 14.9659 11 15.1989 10.9239 15.3827C10.8224 15.6277 10.6277 15.8224 10.3827 15.9239C10.1989 16 9.96594 16 9.5 16C9.03406 16 8.80109 16 8.61732 15.9239C8.37229 15.8224 8.17761 15.6277 8.07612 15.3827C8 15.1989 8 14.9659 8 14.5V9.5Z"  stroke-width="1.5"/>
+                <path d="M13 9.5C13 9.03406 13 8.80109 13.0761 8.61732C13.1776 8.37229 13.3723 8.17761 13.6173 8.07612C13.8011 8 14.0341 8 14.5 8C14.9659 8 15.1989 8 15.3827 8.07612C15.6277 8.17761 15.8224 8.37229 15.9239 8.61732C16 8.80109 16 9.03406 16 9.5V14.5C16 14.9659 16 15.1989 15.9239 15.3827C15.8224 15.6277 15.6277 15.8224 15.3827 15.9239C15.1989 16 14.9659 16 14.5 16C14.0341 16 13.8011 16 13.6173 15.9239C13.3723 15.8224 13.1776 15.6277 13.0761 15.3827C13 15.1989 13 14.9659 13 14.5V9.5Z"  stroke-width="1.5"/>
+            </svg>
+        )
+    }
+
+
     return (
        <div className="relative overflow-auto">
          <ul className="mx-2 rounded-sm overflow-auto  ">
@@ -29,8 +42,8 @@ const List = () => {
             {music.map((song) => {
                 const { id, name, artist, album, year, genre, duration, cover } = song;
                 return (
-                    <li className="flex mb-2 gap-2 bg-slate-800 text-white  " key={id} >
-                        <img src='%PUBLIC_URL%/cover.jpg' alt='' className="w-12" />
+                    <li className="flex mb-2 gap-2 shadow-lg shadow-gray-800 text-gray-400  " key={id} >
+                        <img src='/img/disc.jpg' alt='x' className="w-12 bg-dark-100 bg-blend-darken"/>
 
                         <div className="self-center ">
                             <h4>{song.name}</h4>
@@ -38,8 +51,9 @@ const List = () => {
                         </div>
 
                     <div className="ml-auto flex  items-center space-x-2">
-                            <OptionIcon stroke='black ' />
-                            <PlayIcon stroke='black' />
+                            <OptionIcon stroke='none' fill='gray' />
+                            <PlayIcon stroke="gray" fill='none' />
+                            <PauseIcon  stroke='gray'  />
                         </div>
                     </li>
                 );

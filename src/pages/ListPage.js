@@ -16,12 +16,12 @@ const ListPage = () => {
     console.log(navState)
 
     return (
-        <div className="fixed  w-full top-0 bottom-0 bg-green-400 grid  layout grid-cols-12">
+        <div className="fixed  w-full top-0 bottom-0 bg-dark-200 grid  layout grid-cols-12">
             <div class='col-span-12'>
                 <Nav />
             </div>
 
-            <div className="col-span-12 md:grid grid-cols-12  outline main">
+            <div className="col-span-12 md:grid grid-cols-12  main">
                 <div className={"col-span-2 fixed md:relative  w-4/6 md:w-full  top-0 bottom-0 bg-red-300 z-10  md:block  " + (navState ? '' : 'hidden') }>
                     <SideBar />
                 </div>

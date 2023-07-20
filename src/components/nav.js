@@ -34,7 +34,7 @@ const Nav = () => {
 
     return (
         <div >
-            <nav className="flex  bg-red-400 w-full  justify-between italic p-2  ">
+            <nav className="flex  bg-dark-100 text-white  w-full  justify-between italic p-2  border-black border-b-2  ">
                 <h1>MusicRadio</h1>
                 <div className="flex grow  justify-end ">
                     <div className="mx-4 md:hidden">
@@ -44,7 +44,7 @@ const Nav = () => {
                         <MenuIcon  /> 
                     </div>
 
-                    <form className="hidden md:flex bg-white rounded-lg p-[1px]">
+                    <form className="hidden md:flex bg-white text-black  rounded-lg p-[1px]">
                         <SearchIcon  />
                         <input type="text" className="outline-none px-2 rounded-lg w-[400px] bg-inherit" placeholder="search"/>
                     </form>
