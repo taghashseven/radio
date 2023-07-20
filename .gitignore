@@ -11,6 +11,9 @@
 # production
 /build
 
+# other file and folders
+/research 
+
 # misc
 .DS_Store
 .env.local

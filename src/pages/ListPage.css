@@ -1,0 +1,9 @@
+
+
+.layout {
+    display: grid ;
+}
+
+.main {
+    height: calc(100vh - 50px);
+}
